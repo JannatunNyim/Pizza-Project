@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria website page for final project</title>
+       <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <section class="flex">
+ 
+       <a href="#home" class="logo">Pizzeria</a>
+ 
+       <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#order">Order</a>
+          <a href="#faq">Report</a>
+       </nav>
+ 
+       <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="order-btn" class="fas fa-box"></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+       </div>
+ 
+    </section>
+ 
+ </header>
+ 
+ <!-- header section ends -->
+ <div class="user-account">
+
+    <section>
+ 
+       <div id="close-account"><span>close</span></div>
+ 
+       <div class="user">
+          <p><span>you are not logged in now!</span></p>
+       </div>
+ 
+       <div class="display-orders">
+          <p>pizza-1 <span>( 3€ x 2 )</span></p>
+          <p>pizza 03 <span>( 3€ x 1 )</span></p>
+          <p>pizza 06 <span>( 3€ x 4 )</span></p>
+          <p>pizza 07 <span>( 3€ x 1 )</span></p>
+       </div>
+ 
+       <div class="flex">
+ 
+          <form action="" method="post">
+             <h3>login now</h3>
+             <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+             <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+             <input type="submit" value="login now" name="login" class="btn">
+          </form>
+ 
+          <form action="" method="post">
+             <h3>register now</h3>
+             <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+             <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+             <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+             <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+             <input type="submit" value="register now" name="register" class="btn">
+          </form>
+ 
+       </div>
+ 
+    </section>
+ 
+ </div>
+ 
+ <div class="my-orders">
+ 
+    <section>
+ 
+       <div id="close-orders"><span>close</span></div>
+ 
+       <h3 class="title"> my orders </h3>
+ 
+       <div class="box">
+          <p>placed on : <span>03/01/2023</span> </p>
+          <p>name : <span>Jannatun nyim</span> </p>
+          <p>number : <span>053356777</span></p>
+          <p>address : <span>Katiskaniementie 1 F12</span></p>
+          <p>payment method : <span>cash on delivery</span></p>
+          <p>your orders : <span>pizza-16 10 € x 2, pizza-15 10 € x 1, pizza-14 10 € x 4, pizza-12, 10 € x 1</span></p>
+          <p>total price : <span>80 euro/-</span></p>
+          <p>payment status : <span style="color: var(--red);">pending</span> </p>
+       </div>
+ 
+       <div class="box">
+            <p>placed on : <span>03/01/2023</span> </p>
+            <p>name : <span>Jannatun nyim</span> </p>
+            <p>number : <span>053356777</span></p>
+            <p>address : <span>Katiskaniementie 1 F12</span></p>
+            <p>payment method : <span>cash on delivery</span></p>
+            <p>your orders : <span>pizza-16 10 € x 2, pizza-15 10 € x 1, pizza-14 10 € x 4, pizza-12, 10 € x 1</span></p>
+            <p>total price : <span>80 euro/-</span></p>
+            <p>payment status : <span style="color: var(--red);">pending</span> </p>
+       </div>
+ 
+    </section>
+ 
+ </div>
+ 
+ <div class="shopping-cart">
+ 
+    <section>
+ 
+       <div id="close-cart"><span>close</span></div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="Images/pizza-1.jpg" alt="">
+          <div class="content">
+             <p>pizza-1 <span>( 10 € x 2 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="Images/pizza-2.jpg" alt="">
+          <div class="content">
+             <p>pizza-3 <span>( 10 € x 1 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="Images/pizza-6.jpg" alt="">
+          <div class="content">
+             <p>pizza-6 <span>( 10 € x 2 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="Images/pizza-7.jpg" alt="">
+          <div class="content">
+             <p>pizza-7 <span>( 10 € x 1 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <a href="#order" class="btn">order now</a>
+ 
+    </section>
+ 
+ </div>
+ 
+ <div class="home-bg">
+ 
+    <section class="home" id="home">
+ 
+       <div class="slide-container">
+ 
+          <div class="slide active">
+             <div class="image">
+                <img src="Images/home-img-3.png" alt="">
+             </div>
+             <div class="content">
+                <h3>Choose your Pizza</h3>
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+             </div>
+          </div>
+ 
+          <div class="slide">
+             <div class="image">
+                <img src="Images/home-img-2.png" alt="">
+             </div>
+             <div class="content">
+                <h3>Place your orders</h3>
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+             </div>
+          </div>
+ 
+          <div class="slide">
+             <div class="image">
+                <img src="Images/home-img-1.png" alt="">
+             </div>
+             <div class="content">
+                <h3>Enjoy our food</h3>
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+             </div>
+          </div>
+ 
+       </div>
+ 
+    </section>
+ 
+ </div>
+ 
+ <!-- about section starts  -->
+ 
+ <section class="about" id="about">
+ 
+    <h1 class="heading">about us</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="Images/about-1.jpg" alt="">
+          <h3>made with love</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+          <a href="#menu" class="btn">our menu</a>
+       </div>
+ 
+       <div class="box">
+          <img src="Images/about-2.jpg" alt="">
+          <h3>30 minutes delivery</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+          <a href="#menu" class="btn">our menu</a>
+       </div>
+ 
+       <div class="box">
+          <img src="Images/about-0.jpg" alt="">
+          <h3>share with freinds</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+          <a href="#menu" class="btn">our menu</a>
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- about section ends -->
+ 
+ <!-- menu section starts  -->
+ 
+ <section id="menu" class="menu">
+ 
+    <h1 class="heading">our menu</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizza-1.jpg" alt="">
+          <div class="name">pizzeria-3</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-3.jpg" alt="">
+          <div class="name">pizza 2</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-4.jpg" alt="">
+          <div class="name">pizza 3</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-5.jpg" alt="">
+          <div class="name">pizza 4</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-6.jpg" alt="">
+          <div class="name">pizza 5</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-8.jpg" alt="">
+          <div class="name">pizza 6</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-9.jpg" alt="">
+          <div class="name">pizza 7</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizzeria-10.jpg" alt="">
+          <div class="name">pizza 8</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price"><span>10</span>€</div>
+          <img src="Images/pizza-9.jpg" alt="">
+          <div class="name">pizza 9</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- menu section ends -->
+ 
+ <!-- order section starts  -->
+ 
+ <section class="order" id="order">
+ 
+    <h1 class="heading">order now</h1>
+ 
+    <form action="" method="post">
+ 
+       <div class="display-orders">
+          <p>pizza-1 <span>( 10 € x 2 )</span></p>
+          <p>pizza-3 <span>( 10 € x 1 )</span></p>
+          <p>pizza-6 <span>( 10 € x 4 )</span></p>
+          <p>pizza-7 <span>( 10 € x 1 )</span></p>
+       </div>
+ 
+       <div class="flex">
+          <div class="inputBox">
+             <span>your name :</span>
+             <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+          </div>
+          <div class="inputBox">
+             <span>your number :</span>
+             <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+          </div>
+          <div class="inputBox">
+             <span>payment method</span>
+             <select name="method" class="box">
+                <option value="cash on delivery">cash on delivery</option>
+                <option value="credit card">credit card</option>
+                <option value="paytm">paytm</option>
+                <option value="paypal">paypal</option>
+             </select>
+          </div>
+          <div class="inputBox">
+             <span>address line 01 :</span>
+             <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+          </div>
+          <div class="inputBox">
+             <span>address line 02 :</span>
+             <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+          </div>
+          <div class="inputBox">
+             <span>pin code :</span>
+             <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+          </div>
+       </div>
+ 
+       <input type="submit" value="order now" class="btn" name="order">
+ 
+    </form>
+ 
+ </section>
+ 
+ <!-- order section ends -->
+
+
+ 
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+3589875434446</p>
+         <p>+3583234455565</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>our address</h3>
+         <p>Microkatu 1, Kuopio 70150</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>00:09am to 20:00pm</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>pizzeria@gmail.com</p>
+         <p>Microkatu@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2023 by <span>Savon ammattiopisto</span> | all rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+ 
+ <script src="Script.js"></script>
+    
+</body>
+</html>
